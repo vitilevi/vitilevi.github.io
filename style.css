@@ -21,19 +21,19 @@ h1 {
   height: 80px;
 }
 
-#rodape {
+#footer {
   font-family: Nanum Gothic, sans-serif;
   margin-top: 20px;
   text-align: center;
   color: #666;
 }
 
-#rodape a {
+#footer a {
   color: #888;
   text-decoration: none;
 }
 
-#rodape a:hover {
+#footer a:hover {
   color: #D55;
 }
 
@@ -50,4 +50,8 @@ h1 {
   background-color: #CCC;
   padding: 6px;
   border-radius: 7px;
+}
+
+#span-footer:hover {
+  padding: 8px;
 }
