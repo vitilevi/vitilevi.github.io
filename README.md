@@ -3,3 +3,4 @@
   - [Email](mailto:vitilevi@hotmail.com)
   - [Linkedin](https://linkedin.vmfaria.com) {:target="_blank"}
   - [Instagram](https://instagram.vmfaria.com) {:target="_blank"}
+  - [Link](https://example.org/ "title" target="_blank")
