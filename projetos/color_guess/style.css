@@ -1,0 +1,10 @@
+.ball {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mid-content {
+  text-align: center;
+}

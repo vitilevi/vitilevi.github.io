@@ -1,53 +1,106 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: MontSerrat, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #111;
+  background-color: #fafafa;
+  
 }
 
-h1 {
-  color: #CCC;
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  overflow: hidden;
+  min-height: 100px;
+  height: 20vh;
+}
+
+header h1 {
+  color: #fafafa;
+  margin-left: 15px;
+}
+
+header nav a, header nav a:visited{
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header nav a:hover {
+  color: #afc;
+}
+
+main article {
+  width: 70vw;
+}
+
+main section {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+main section div {
+  box-shadow: 2px 2px 5px rgba(50 , 50 , 50 , 0.5);
+  box-sizing: content-box;
+  background-color: rgba(220 , 220 , 220 , 0.8);
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px;
+  flex-basis: 100px;
   text-align: center;
-  position: relative;
-  top: 20px;
-  font-family: Montserrat, sans-serif;
-  font-size: 2em;
 }
 
-#header {
-  background-color: #000;
-  height: 80px;
+main section div p {
+  margin-bottom: 10px;
 }
 
-#rodape {
+main section div:hover {
+  transform: scale(1.05);
+}
+
+main section div:active {
+  transform: scale(0.95);
+}
+
+main section div a, main section div a:visited {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main section div img {
+  width: 200px;
+  display: flex;
+}
+
+
+
+#footer {
   font-family: Nanum Gothic, sans-serif;
   margin-top: 20px;
   text-align: center;
   color: #666;
 }
 
-#rodape a {
+#footer a {
   color: #888;
   text-decoration: none;
 }
 
-#rodape a:hover {
-  color: #D55;
+#footer a:hover {
+  color: #d55;
 }
 
-.social {
-  width: 20px;
-  padding-top: 5px;
-  margin-top: 4px;
-  display: inline-block;
-  position: relative;
-  top: 4px;
-}
-
-#span-footer {
-  background-color: #CCC;
-  padding: 6px;
-  border-radius: 7px;
-}
