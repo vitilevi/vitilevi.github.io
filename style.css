@@ -18,81 +18,94 @@ header {
   align-items: center;  
   overflow: hidden;
   min-height: 100px;
-  height: 20vh;
+  height: 18vh;
 }
 
-header h1 {
+header p {
   color: #fafafa;
-  margin-left: 15px;
+  font-size: 2em;
+  margin: 0 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header nav {
+  flex-grow: 1;
+  text-align: center;
 }
 
 header nav a, header nav a:visited{
   color: white;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 10px 5px;
 }
 
 header nav a:hover {
   color: #afc;
 }
 
-main article {
-  width: 70vw;
+main #who-am-i {
+  text-align: justify;
 }
 
-main section {
-  width: 80vw;
+#who-am-i h2, #projects h2, #skills h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+main section, main #who-am-i, main #projects #div-projects {
+  padding: 10px 20px 20px 20px;
+  width: 85vw;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
-main section div {
+main #projects #div-projects div {
   box-shadow: 2px 2px 5px rgba(50 , 50 , 50 , 0.5);
   box-sizing: content-box;
   background-color: rgba(220 , 220 , 220 , 0.8);
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 200px;
   padding: 15px;
   border-radius: 10px;
-  margin: 5px;
+  margin: 5px 14px;
   flex-basis: 100px;
   text-align: center;
 }
 
-main section div p {
-  margin-bottom: 10px;
-}
-
-main section div:hover {
+main #projects #div-projects div:hover {
   transform: scale(1.05);
 }
 
-main section div:active {
+main #projects #div-projects div:active {
   transform: scale(0.95);
 }
 
-main section div a, main section div a:visited {
+main #projects #div-projects div a, main #projects #div-projects div a:visited {
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
 
-main section div img {
+main #projects #div-projects div img {
   width: 200px;
   display: flex;
 }
 
-
+#projects p {
+  padding-bottom: 10px;
+}
 
 #footer {
   font-family: Nanum Gothic, sans-serif;
   margin-top: 20px;
   text-align: center;
   color: #666;
+  margin-bottom: 20px;
 }
 
 #footer a {
