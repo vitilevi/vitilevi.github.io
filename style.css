@@ -17,8 +17,6 @@ header {
   justify-content: space-around;
   align-items: center;  
   overflow: hidden;
-  min-height: 100px;
-  height: 18vh;
 }
 
 header p {
@@ -34,28 +32,17 @@ header nav {
   text-align: center;
 }
 
-header nav a, header nav a:visited{
-  color: white;
-  text-decoration: none;
-  margin: 10px 5px;
-}
-
-header nav a:hover {
-  color: #afc;
-}
-
-main #who-am-i {
+#who-am-i {
   text-align: justify;
 }
 
-#who-am-i h2, #projects h2, #skills h2 {
+h2 {
   text-align: center;
   padding: 10px;
 }
 
-main section, main #who-am-i, main #projects #div-projects {
-  padding: 10px 20px 20px 20px;
-  width: 85vw;
+#who-am-i, #skills,#projects, #div-projects {
+  padding: 15px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
@@ -63,7 +50,11 @@ main section, main #who-am-i, main #projects #div-projects {
   align-items: center;
 }
 
-main #projects #div-projects div {
+#div-title p {
+  text-align: justify;
+}
+
+#div-projects div {
   box-shadow: 2px 2px 5px rgba(50 , 50 , 50 , 0.5);
   box-sizing: content-box;
   background-color: rgba(220 , 220 , 220 , 0.8);
@@ -77,23 +68,53 @@ main #projects #div-projects div {
   text-align: center;
 }
 
-main #projects #div-projects div:hover {
-  transform: scale(1.05);
-}
+
 
 main #projects #div-projects div:active {
   transform: scale(0.95);
 }
 
-main #projects #div-projects div a, main #projects #div-projects div a:visited {
+#div-projects div a, #div-projects div a:visited {
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
 
-main #projects #div-projects div img {
+#div-projects div img {
   width: 200px;
   display: flex;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-social div{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#contact-social div p {
+  margin-left: 5px;
+}
+
+#contact section h2 {
+  align-self: center;
+  text-align: center; 
+}
+
+#contact-title {
+  align-self: flex-start;
 }
 
 #projects p {
@@ -113,7 +134,48 @@ main #projects #div-projects div img {
   text-decoration: none;
 }
 
-#footer a:hover {
-  color: #d55;
+@media screen and (max-width: 678px) {
+  header {
+    height: 100px;
+    font-size: 1.5em;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #who-am-i, #skills,#projects, #div-projects {
+    width: 100%;
+  }
 }
 
+@media screen and (min-width: 678px) {
+  header {
+    min-height: 100px;
+    height: 18vh;
+    max-height: 150px;
+  }
+
+  header nav a, header nav a:visited{
+    color: white;
+    text-decoration: none;
+    margin: 10px 5px;
+  }
+  
+  header nav a:hover {
+    color: #afc;
+  }
+
+  main #projects #div-projects div:hover {
+    transform: scale(1.05);
+  }
+
+  #who-am-i, #skills,#projects, #div-projects {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #footer a:hover {
+    color: #d55;
+  }
+}

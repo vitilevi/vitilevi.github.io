@@ -61,9 +61,11 @@ header {
   background-color: white;
   width: 300px;
   height: 300px;
+  display: flex;
 }
 
 #meme-text {
+  text-align: center;
   object-fit: contain;
   position: absolute;
   text-shadow: 5px 5px 5px black;
@@ -71,6 +73,9 @@ header {
   color: white;
   width: 300px;
   overflow: hidden;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  
 }
 
 #meme-image {
