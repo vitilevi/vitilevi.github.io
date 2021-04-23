@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background-color: #101f1f;
+  background-color: rgba(16 , 31 , 31 , 0.97);
   display: flex;
   justify-content: space-around;
   align-items: center;  
@@ -26,6 +26,11 @@ header p {
   margin: 0 20px;
   flex-grow: 1;
   text-align: center;
+  opacity: 90%;
+}
+
+header p:hover {
+  opacity: 100%;
 }
 
 header nav {
@@ -52,6 +57,27 @@ h2 {
   align-items: center;
 }
 
+#skills {
+  flex-direction: column;
+  justify-content: stretch;
+  text-align: center;
+}
+
+#skills div {
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  justify-content: stretch;
+  align-items: center;
+}
+
+#skills div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #div-title p {
   text-align: justify;
 }
@@ -65,12 +91,12 @@ h2 {
   flex-flow: row wrap;
   padding: 15px;
   border-radius: 10px;
-  margin: 5px 14px;
+  margin: 8px 14px;
   flex-basis: 100px;
   text-align: center;
 }
 
-main #projects #div-projects div:active {
+#projects #div-projects div:active {
   transform: scale(0.95);
 }
 
@@ -134,10 +160,9 @@ main #projects #div-projects div:active {
 
 #footer {  
   font-family: Nanum Gothic, sans-serif;
-  margin-top: 20px;
   text-align: center;
   color: #666;
-  background-color: #101f1f;
+  background-color: rgba(16 , 31 , 31 , 0.97);
 }
 
 #footer a {
@@ -182,7 +207,7 @@ main #projects #div-projects div:active {
   }
 
   #who-am-i, #skills,#projects {
-    width: 70%;
+    width: 85vw;
     padding: 15px;
   }
 
