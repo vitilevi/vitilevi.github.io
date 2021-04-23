@@ -8,11 +8,10 @@
 
 body {
   background-color: #fafafa;
-  
 }
 
 header {
-  background-color: black;
+  background-color: #101f1f;
   display: flex;
   justify-content: space-around;
   align-items: center;  
@@ -21,6 +20,8 @@ header {
 
 header p {
   color: #fafafa;
+  font-family: Nanum Gothic, sans-serif;
+  font-weight: 800;
   font-size: 2em;
   margin: 0 20px;
   flex-grow: 1;
@@ -39,6 +40,7 @@ header nav {
 h2 {
   text-align: center;
   padding: 10px;
+  color: #101f1f;
 }
 
 #who-am-i, #skills,#projects, #div-projects {
@@ -68,8 +70,6 @@ h2 {
   text-align: center;
 }
 
-
-
 main #projects #div-projects div:active {
   transform: scale(0.95);
 }
@@ -78,6 +78,10 @@ main #projects #div-projects div:active {
   color: black;
   cursor: pointer;
   text-decoration: none;
+}
+
+#div-projects div:hover {
+  transform: scale(1.05);
 }
 
 #div-projects div img {
@@ -96,16 +100,18 @@ main #projects #div-projects div:active {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 #contact-social div{
   display: flex;
   align-items: center;
   padding: 10px;
+  font-size: small;
 }
 
 #contact-social div p {
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 #contact section h2 {
@@ -121,12 +127,17 @@ main #projects #div-projects div:active {
   padding-bottom: 10px;
 }
 
-#footer {
+#contact-title h2 {
+  padding-bottom: 0;
+  color: #666;
+}
+
+#footer {  
   font-family: Nanum Gothic, sans-serif;
   margin-top: 20px;
   text-align: center;
   color: #666;
-  margin-bottom: 20px;
+  background-color: #101f1f;
 }
 
 #footer a {
@@ -137,7 +148,7 @@ main #projects #div-projects div:active {
 @media screen and (max-width: 678px) {
   header {
     height: 100px;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   header nav {
@@ -146,6 +157,10 @@ main #projects #div-projects div:active {
 
   #who-am-i, #skills,#projects, #div-projects {
     width: 100%;
+  }
+
+  #footer {
+    padding: 30px 10px 50px 10px;
   }
 }
 
@@ -166,13 +181,18 @@ main #projects #div-projects div:active {
     color: #afc;
   }
 
-  main #projects #div-projects div:hover {
-    transform: scale(1.05);
+  #who-am-i, #skills,#projects {
+    width: 70%;
+    padding: 15px;
   }
 
-  #who-am-i, #skills,#projects, #div-projects {
-    width: 90%;
+  #div-projects {
+    width: 100%;
     padding: 15px;
+  }
+
+  #footer {
+    padding: 60px 50px 80px 50px;
   }
 
   #footer a:hover {
